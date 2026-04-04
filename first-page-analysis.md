@@ -72,6 +72,7 @@
 | Content | 과목 카드 / CTA | `Button/Contained` | 버튼 |
 | Content | 과목 카드 / More | `Icon Button` | 더보기 버튼 |
 | Content | Divider | `Divider` | 구분선 |
+
 ---
 
 ## 3. 컴포넌트 그룹핑 시각화 (Mermaid)
