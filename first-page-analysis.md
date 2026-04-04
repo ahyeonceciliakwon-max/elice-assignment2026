@@ -52,16 +52,13 @@
 | Header | Header / Search | `TextField` | search icon + 입력 텍스트 |
 | Header | Header / Actions | `Children` | 알림 버튼 + 메시지 버튼 |
 | Header | Header / Avatar | 원형 도형 | 프로필 placeholder |
-
 | Main | 페이지 루트 | `1번 화면 - 학습 과목 목록` | Header + Main |
 | Main | Main Layout | `Main` | Navigation Rail + Side Navigation + Container |
-
 | Navigation | Navigation Rail | `Navigation Rail` | 기관 홈 / 탐색 / 내 클래스 / 대시보드 / 더 보기 |
 | Navigation | Rail Item | `ListItem` | Icon + Label |
 | Navigation | Side Navigation | `Side Navigation` | Info + List |
 | Navigation | Side Navigation / Info | `Info` | 클래스명 텍스트 |
 | Navigation | Side Navigation / List | `List` | 클래스 홈 / 학습 과목 / 수업 일정 / 게시판 |
-
 | Content | Content Wrapper | `Box` | 페이지 헤더 + 카드 목록 |
 | Content | 페이지 헤더 | `학습 과목 목록 헤더` | 타이틀 텍스트 |
 | Content | 과목 카드 | `과목 카드` | Image + Content + (Button) + Icon Button |
