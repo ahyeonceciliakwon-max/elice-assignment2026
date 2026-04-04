@@ -72,166 +72,98 @@
 
 ---
 
-## 3. 컴포넌트 그룹핑 시각화 (Mermaid)
+## 3. 컴포넌트 구조 시각화
+
+```mermaid
 graph TD
     A["1번 화면 - 학습 과목 목록"]
 
+    %% Layout
     A --> B["Header"]
     A --> C["Main"]
 
-    subgraph HEADER["Header"]
-        B
-        B1["Left"]
-        B2["Right"]
-        B11["Icon Button (bars)"]
-        B12["Elice Logo"]
-        B13["Org"]
-        B131["LXP"]
-        B132["Chip/Filled: Enterprise"]
-        B133["chevron-down"]
-        B21["TextField"]
-        B22["Actions"]
-        B23["Avatar"]
-        B211["search icon"]
-        B212["검색"]
-        B221["bell"]
-        B222["message-lines"]
-    end
+    %% Header
+    B --> B1["Left"]
+    B --> B2["Right"]
 
-    subgraph MAIN["Main"]
-        C
-        C1["Navigation Rail"]
-        C2["Side Navigation"]
-        C3["Main Content"]
-    end
+    B1 --> B11["Icon Button (bars)"]
+    B1 --> B12["Elice Logo"]
+    B1 --> B13["Org"]
+    B13 --> B131["LXP"]
+    B13 --> B132["Enterprise"]
+    B13 --> B133["chevron-down"]
 
-    subgraph NAVIGATION["Navigation"]
-        C11["기관 홈"]
-        C12["탐색"]
-        C13["내 클래스"]
-        C14["대시보드"]
-        C15["더 보기"]
-        C21["Info: 파이썬 입문 클래스"]
-        C22["List"]
-        C221["클래스 홈"]
-        C222["학습 과목"]
-        C223["수업 일정"]
-        C224["게시판"]
-    end
+    B2 --> B21["Search Field"]
+    B2 --> B22["Actions"]
+    B2 --> B23["Avatar"]
 
-    subgraph CONTENT["Content"]
-        C31["학습 과목 목록 헤더"]
-        C32["List"]
-        D1["과목 카드 1"]
-        D2["Divider"]
-        D3["과목 카드 2"]
-        D4["Divider"]
-        D5["과목 카드 3"]
-        D11["Image"]
-        D12["Content"]
-        D13["Button/Contained"]
-        D14["Icon Button"]
-        D121["도레미 파이썬 1"]
-        D122["파이썬 • 입문 • 8-16시간"]
-        D123["Linear Progress/Determinate"]
-        D1231["ProgressContainer"]
-        D1232["25%"]
-        D12311["01"]
-        D12312["02"]
-        D12313["03"]
-        D12314["04"]
-        D31["Image"]
-        D32["Content"]
-        D33["Icon Button"]
-        D321["도레미 파이썬 2"]
-        D322["파이썬 • 입문 • 8-16시간"]
-        D51["Image"]
-        D52["Content"]
-        D53["Icon Button"]
-        D521["파이썬 기초 문제집"]
-        D522["파이썬 • 입문 • 8-16시간"]
-    end
+    B21 --> B211["search icon"]
+    B21 --> B212["검색"]
+    B22 --> B221["bell"]
+    B22 --> B222["message"]
 
-    B --> B1
-    B --> B2
+    %% Main
+    C --> C1["Navigation Rail"]
+    C --> C2["Side Navigation"]
+    C --> C3["Content"]
 
-    B1 --> B11
-    B1 --> B12
-    B1 --> B13
-    B13 --> B131
-    B13 --> B132
-    B13 --> B133
+    %% Navigation Rail
+    C1 --> C11["기관 홈"]
+    C1 --> C12["탐색"]
+    C1 --> C13["내 클래스"]
+    C1 --> C14["대시보드"]
+    C1 --> C15["더 보기"]
 
-    B2 --> B21
-    B2 --> B22
-    B2 --> B23
-    B21 --> B211
-    B21 --> B212
-    B22 --> B221
-    B22 --> B222
+    %% Side Navigation
+    C2 --> C21["클래스 정보"]
+    C2 --> C22["Menu"]
 
-    C --> C1
-    C --> C2
-    C --> C3
+    C22 --> C221["클래스 홈"]
+    C22 --> C222["학습 과목"]
+    C22 --> C223["수업 일정"]
+    C22 --> C224["게시판"]
 
-    C1 --> C11
-    C1 --> C12
-    C1 --> C13
-    C1 --> C14
-    C1 --> C15
+    %% Content
+    C3 --> C31["학습 과목 목록"]
+    C3 --> C32["과목 리스트"]
 
-    C2 --> C21
-    C2 --> C22
-    C22 --> C221
-    C22 --> C222
-    C22 --> C223
-    C22 --> C224
+    %% Course Cards
+    C32 --> D1["과목 카드"]
+    C32 --> D2["Divider"]
+    C32 --> D3["과목 카드"]
+    C32 --> D4["Divider"]
+    C32 --> D5["과목 카드"]
 
-    C3 --> C31
-    C3 --> C32
+    %% Card 1
+    D1 --> D11["Thumbnail"]
+    D1 --> D12["정보 영역"]
+    D1 --> D13["CTA Button"]
+    D1 --> D14["More Button"]
 
-    C32 --> D1
-    C32 --> D2
-    C32 --> D3
-    C32 --> D4
-    C32 --> D5
+    D12 --> D121["과목명"]
+    D12 --> D122["메타 정보"]
+    D12 --> D123["Progress"]
 
-    D1 --> D11
-    D1 --> D12
-    D1 --> D13
-    D1 --> D14
+    D123 --> D1231["단계 (01~04)"]
+    D123 --> D1232["진도율 (25%)"]
 
-    D12 --> D121
-    D12 --> D122
-    D12 --> D123
-    D123 --> D1231
-    D123 --> D1232
-    D1231 --> D12311
-    D1231 --> D12312
-    D1231 --> D12313
-    D1231 --> D12314
+    %% Card 2,3
+    D3 --> D31["Thumbnail"]
+    D3 --> D32["정보 영역"]
+    D3 --> D33["More Button"]
 
-    D3 --> D31
-    D3 --> D32
-    D3 --> D33
-    D32 --> D321
-    D32 --> D322
+    D5 --> D51["Thumbnail"]
+    D5 --> D52["정보 영역"]
+    D5 --> D53["More Button"]
 
-    D5 --> D51
-    D5 --> D52
-    D5 --> D53
-    D52 --> D521
-    D52 --> D522
+    %% 🎨 Color Definition
+    classDef header fill:#E3F2FD,stroke:#64B5F6,color:#000;
+    classDef main fill:#F3E5F5,stroke:#BA68C8,color:#000;
+    classDef navigation fill:#E8F5E9,stroke:#81C784,color:#000;
+    classDef content fill:#FFF3E0,stroke:#FFB74D,color:#000;
 
-    classDef root fill:#f5f5f5,stroke:#999,stroke-width:1px,color:#111;
-    classDef header fill:#E8F0FE,stroke:#7BAAF7,stroke-width:1.5px,color:#111;
-    classDef main fill:#F3E8FF,stroke:#B388EB,stroke-width:1.5px,color:#111;
-    classDef navigation fill:#E8F5E9,stroke:#81C784,stroke-width:1.5px,color:#111;
-    classDef content fill:#FFF3E0,stroke:#FFB74D,stroke-width:1.5px,color:#111;
-
-    class A root;
-
+    %% Apply Colors
     class B,B1,B2,B11,B12,B13,B131,B132,B133,B21,B22,B23,B211,B212,B221,B222 header;
-    class C,C1,C2,C3 main;
-    class C11,C12,C13,C14,C15,C21,C22,C221,C222,C223,C224 navigation;
-    class C31,C32,D1,D2,D3,D4,D5,D11,D12,D13,D14,D121,D122,D123,D1231,D1232,D12311,D12312,D12313,D12314,D31,D32,D33,D321,D322,D51,D52,D53,D521,D522 content;
+    class C main;
+    class C1,C2,C11,C12,C13,C14,C15,C21,C22,C221,C222,C223,C224 navigation;
+    class C3,C31,C32,D1,D2,D3,D4,D5,D11,D12,D13,D14,D121,D122,D123,D1231,D1232,D31,D32,D33,D51,D52,D53 content;
