@@ -15,9 +15,6 @@ AI 기술을 통해 더 많은 기회를 제공하는 엘리스의 비전에
 # 📂 제공 자료
 
 - 엘리스 플랫폼 핵심 화면 5종 (Figma 와이어프레임)  
-  - [링크]  
-  - pw: eliceminiproject  
-
 - 엘리스 브랜드 가이드라인  
   - https://elice.io/ko/resources/brand  
 
