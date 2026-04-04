@@ -44,31 +44,34 @@
 
 ## 2. 컴포넌트 단위 목록
 
-| 컴포넌트 | 실제 data-name | 구성 요소 |
-|---|---|---|
-| 페이지 루트 | `1번 화면 - 학습 과목 목록` | Header + Main |
-| Header | `Header` | Left + Right |
-| Header / Left | `Left` | 햄버거 버튼 + 로고 + 조직 선택 |
-| Header / 조직 선택 | `Org` | 텍스트 + Chip/Filled + chevron-down |
-| Header / Search | `TextField` | search icon + 입력 텍스트 |
-| Header / Actions | `Children` | 알림 버튼 + 메시지 버튼 |
-| Header / Avatar | 원형 도형 | 프로필 placeholder |
-| Navigation Rail | `Navigation Rail` | 기관 홈 / 탐색 / 내 클래스 / 대시보드 / 더 보기 |
-| Rail Item | `ListItem` | Icon + Label |
-| Side Navigation | `Side Navigation` | Info + List |
-| Side Navigation / Info | `Info` | 클래스명 텍스트 |
-| Side Navigation / List | `List` | 클래스 홈 / 학습 과목 / 수업 일정 / 게시판 |
-| 페이지 헤더 | `학습 과목 목록 헤더` | 타이틀 텍스트 |
-| 과목 카드 | `과목 카드` | Image + Content + (Button) + Icon Button |
-| 과목 카드 / Image | `Image` | 썸네일 |
-| 과목 카드 / Text | `Text` | 과목명 + 메타 정보 |
-| 과목 카드 / Progress | `Linear Progress/Determinate` | ProgressContainer + Typography |
-| 과목 카드 / ProgressContainer | `ProgressContainer` | 단계 요소 (`01`, `02`, `03`, `04`) |
-| 과목 카드 / CTA | `Button/Contained` | 버튼 |
-| 과목 카드 / More | `Icon Button` | 더보기 버튼 |
-| Divider | `Divider` | 구분선 |
-| Main Layout | `Main` | Navigation Rail + Side Navigation + Container |
-| Content Wrapper | `Box` | 페이지 헤더 + 카드 목록 |
+| 영역 | 컴포넌트 | 실제 data-name | 구성 요소 |
+|---|---|---|---|
+| Header | Header | `Header` | Left + Right |
+| Header | Header / Left | `Left` | 햄버거 버튼 + 로고 + 조직 선택 |
+| Header | Header / 조직 선택 | `Org` | 텍스트 + Chip/Filled + chevron-down |
+| Header | Header / Search | `TextField` | search icon + 입력 텍스트 |
+| Header | Header / Actions | `Children` | 알림 버튼 + 메시지 버튼 |
+| Header | Header / Avatar | 원형 도형 | 프로필 placeholder |
+
+| Main | 페이지 루트 | `1번 화면 - 학습 과목 목록` | Header + Main |
+| Main | Main Layout | `Main` | Navigation Rail + Side Navigation + Container |
+
+| Navigation | Navigation Rail | `Navigation Rail` | 기관 홈 / 탐색 / 내 클래스 / 대시보드 / 더 보기 |
+| Navigation | Rail Item | `ListItem` | Icon + Label |
+| Navigation | Side Navigation | `Side Navigation` | Info + List |
+| Navigation | Side Navigation / Info | `Info` | 클래스명 텍스트 |
+| Navigation | Side Navigation / List | `List` | 클래스 홈 / 학습 과목 / 수업 일정 / 게시판 |
+
+| Content | Content Wrapper | `Box` | 페이지 헤더 + 카드 목록 |
+| Content | 페이지 헤더 | `학습 과목 목록 헤더` | 타이틀 텍스트 |
+| Content | 과목 카드 | `과목 카드` | Image + Content + (Button) + Icon Button |
+| Content | 과목 카드 / Image | `Image` | 썸네일 |
+| Content | 과목 카드 / Text | `Text` | 과목명 + 메타 정보 |
+| Content | 과목 카드 / Progress | `Linear Progress/Determinate` | ProgressContainer + Typography |
+| Content | 과목 카드 / ProgressContainer | `ProgressContainer` | 단계 요소 (`01`, `02`, `03`, `04`) |
+| Content | 과목 카드 / CTA | `Button/Contained` | 버튼 |
+| Content | 과목 카드 / More | `Icon Button` | 더보기 버튼 |
+| Content | Divider | `Divider` | 구분선 |
 ---
 
 ## 3. 컴포넌트 그룹핑 시각화 (Mermaid)
