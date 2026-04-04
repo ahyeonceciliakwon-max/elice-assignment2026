@@ -44,32 +44,31 @@
 
 ## 2. 컴포넌트 단위 정리
 
-| 컴포넌트 | 실제 data-name | 구성 요소 | 실제 확인된 내용 |
-|---|---|---|---|
-| 페이지 루트 | `1번 화면 - 학습 과목 목록` | Header + Main | 전체 화면을 감싸는 최상위 컨테이너 |
-| Header | `Header` | Left + Right | sticky 상단 헤더, 하단 보더 포함 |
-| Header / Left | `Left` | 햄버거 버튼 + 로고 + 조직 선택 | 조직 선택 영역에 `LXP`, `Enterprise` 포함 |
-| Header / 조직 선택 | `Org` | 텍스트 + Chip/Filled + chevron-down | `LXP` + `Enterprise` 조합 |
-| Header / Search | `TextField` | search icon + 입력 텍스트 | placeholder 성격의 `검색` 표시 |
-| Header / Actions | `Children` | 알림 버튼 + 메시지 버튼 | `bell`, `message-lines` 아이콘 |
-| Header / Avatar | 원형 도형 | 프로필 placeholder | 32x32 회색 원 |
-| Navigation Rail | `Navigation Rail` | 기관 홈 / 탐색 / 내 클래스 / 대시보드 / 더 보기 | 아이콘+라벨 세로 메뉴 |
-| Rail Item | `ListItem` | Icon + Label | 각 아이템 64px 폭 기준 |
-| Side Navigation | `Side Navigation` | Info + List | 클래스 컨텍스트용 2차 네비게이션 |
-| Side Navigation / Info | `Info` | 클래스명 텍스트 | `파이썬 입문 클래스` |
-| Side Navigation / List | `List` | 클래스 홈 / 학습 과목 / 수업 일정 / 게시판 | 아이콘+텍스트 가로형 메뉴 |
-| 페이지 헤더 | `학습 과목 목록 헤더` | 타이틀 텍스트 | `학습 과목 목록` |
-| 과목 카드 | `과목 카드` | Image + Content + (Button) + Icon Button | 총 3개 존재 |
-| 과목 카드 / Image | `Image` | 썸네일 placeholder | 160x90 |
-| 과목 카드 / Text | `Text` | 과목명 + 메타 정보 | 예: `도레미 파이썬 1`, `파이썬 • 입문 • 8-16시간` |
-| 과목 카드 / Progress | `Linear Progress/Determinate` | ProgressContainer + Typography | 첫 번째 카드에만 존재, `25%` |
-| 과목 카드 / ProgressContainer | `ProgressContainer` | `01`, `02`, `03`, `04` | 4분할 구조, `01`만 채워짐 |
-| 과목 카드 / CTA | `Button/Contained` | Base + 버튼 텍스트 | `이어서 학습하기` |
-| 과목 카드 / More | `Icon Button` | ellipsis-vertical 아이콘 | 3개 카드 모두 존재 |
-| Divider | `Divider` | 선형 구분선 | 카드 사이 2개 |
-| Main Layout | `Main` | Navigation Rail + Side Navigation + Container | 3단 레이아웃 |
-| Content Wrapper | `Box` | 페이지 헤더 + 카드 목록 | 본문 최대폭 1024px |
-
+| 컴포넌트 | 실제 data-name | 구성 요소 |
+|---|---|---|
+| 페이지 루트 | `1번 화면 - 학습 과목 목록` | Header + Main |
+| Header | `Header` | Left + Right |
+| Header / Left | `Left` | 햄버거 버튼 + 로고 + 조직 선택 |
+| Header / 조직 선택 | `Org` | 텍스트 + Chip/Filled + chevron-down |
+| Header / Search | `TextField` | search icon + 입력 텍스트 |
+| Header / Actions | `Children` | 알림 버튼 + 메시지 버튼 |
+| Header / Avatar | 원형 도형 | 프로필 placeholder |
+| Navigation Rail | `Navigation Rail` | 기관 홈 / 탐색 / 내 클래스 / 대시보드 / 더 보기 |
+| Rail Item | `ListItem` | Icon + Label |
+| Side Navigation | `Side Navigation` | Info + List |
+| Side Navigation / Info | `Info` | 클래스명 텍스트 |
+| Side Navigation / List | `List` | 클래스 홈 / 학습 과목 / 수업 일정 / 게시판 |
+| 페이지 헤더 | `학습 과목 목록 헤더` | 타이틀 텍스트 |
+| 과목 카드 | `과목 카드` | Image + Content + (Button) + Icon Button |
+| 과목 카드 / Image | `Image` | 썸네일 |
+| 과목 카드 / Text | `Text` | 과목명 + 메타 정보 |
+| 과목 카드 / Progress | `Linear Progress/Determinate` | ProgressContainer + Typography |
+| 과목 카드 / ProgressContainer | `ProgressContainer` | 단계 요소 (`01`, `02`, `03`, `04`) |
+| 과목 카드 / CTA | `Button/Contained` | 버튼 |
+| 과목 카드 / More | `Icon Button` | 더보기 버튼 |
+| Divider | `Divider` | 구분선 |
+| Main Layout | `Main` | Navigation Rail + Side Navigation + Container |
+| Content Wrapper | `Box` | 페이지 헤더 + 카드 목록 |
 ---
 
 ## 3. 컴포넌트 그룹핑 시각화 (Mermaid)
