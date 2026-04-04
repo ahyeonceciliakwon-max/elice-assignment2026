@@ -3,42 +3,42 @@
 
 ## 1. UI 요소 목록 정리
 
-| 구분 | UI 요소 | 실제 표기 / data-name | 위치 | 반복 수 | 비고 |
-|---|---|---|---|---:|---|
-| Screen | 전체 화면 | `1번 화면 - 학습 과목 목록` | 최상위 | 1 | 전체 페이지 컨테이너 |
-| Header | 상단 헤더 | `Header` | 상단 | 1 | sticky 헤더 |
-| Header | 햄버거 아이콘 버튼 | `Icon Button` | 헤더 좌측 | 1 | 아이콘: `bars` |
-| Brand | 로고 | `Elice Logo` | 헤더 좌측 | 1 | 엘리스 로고 |
-| Selector | 조직 선택 버튼 | `Org` | 헤더 좌측 | 1 | `LXP`, `Enterprise`, chevron-down 포함 |
-| Input | 검색 필드 | `TextField` | 헤더 우측 | 1 | 내부 텍스트 `검색` |
-| Action | 알림 아이콘 버튼 | `Icon Button` | 헤더 우측 | 1 | 아이콘: `bell` |
-| Action | 메시지 아이콘 버튼 | `Children` 내부 버튼 | 헤더 우측 | 1 | 아이콘: `message-lines` |
-| Avatar | 프로필 원형 영역 | 원형 도형 | 헤더 우측 | 1 | 32x32 회색 원 |
-| Navigation | 네비게이션 레일 | `Navigation Rail` | 본문 좌측 1열 | 1 | 아이콘 + 라벨 구조 |
-| Navigation Item | 기관 홈 | `ListItem` | 네비게이션 레일 | 1 | 아이콘: `home` |
-| Navigation Item | 탐색 | `ListItem` | 네비게이션 레일 | 1 | 아이콘: `compass` |
-| Navigation Item | 내 클래스 | `ListItem` | 네비게이션 레일 | 1 | 아이콘: `book-open-cover` |
-| Navigation Item | 대시보드 | `ListItem` | 네비게이션 레일 | 1 | 아이콘: `table-columns` |
-| Navigation Item | 더 보기 | `ListItem` | 네비게이션 레일 | 1 | 아이콘: `ellipsis` |
-| Navigation | 사이드 네비게이션 | `Side Navigation` | 본문 좌측 2열 | 1 | 클래스 단위 메뉴 |
-| Info | 클래스 정보 영역 | `Info` | 사이드 네비게이션 상단 | 1 | 텍스트: `파이썬 입문 클래스` |
-| Side Nav Item | 클래스 홈 | `ListItem` | 사이드 네비게이션 | 1 | 아이콘: `chalkboard-user` |
-| Side Nav Item | 학습 과목 | `ListItem` | 사이드 네비게이션 | 1 | 아이콘: `list` |
-| Side Nav Item | 수업 일정 | `ListItem` | 사이드 네비게이션 | 1 | 아이콘: `calendar` |
-| Side Nav Item | 게시판 | `ListItem` | 사이드 네비게이션 | 1 | 아이콘: `chalkboard` |
-| Section Header | 페이지 제목 | `학습 과목 목록 헤더` | 메인 콘텐츠 상단 | 1 | 텍스트: `학습 과목 목록` |
-| Card | 과목 카드 | `과목 카드` | 메인 리스트 | 3 | 과목 썸네일 + 텍스트 + 액션 |
-| Media | 썸네일 영역 | `Image` | 각 과목 카드 좌측 | 3 | 160x90 placeholder |
-| Text | 과목명 텍스트 | `Text` | 카드 본문 | 3 | `도레미 파이썬 1/2`, `파이썬 기초 문제집` |
-| Text | 메타 정보 텍스트 | `Text` | 카드 본문 | 3 | `파이썬 • 입문 • 8-16시간` |
-| Progress | 진도 바 | `Linear Progress/Determinate` | 첫 번째 카드 | 1 | `25%` 표시 포함 |
-| Progress Segment | 진도 세그먼트 | `01`, `02`, `03`, `04` | 첫 번째 카드 내부 | 4 | `01`만 채워짐 |
-| Button | 이어서 학습하기 버튼 | `Button/Contained` | 첫 번째 카드 | 1 | 텍스트: `이어서 학습하기` |
-| Action | 더보기 아이콘 버튼 | `Icon Button` | 각 과목 카드 우측 | 3 | 아이콘: `ellipsis-vertical` |
-| Divider | 구분선 | `Divider` | 카드 사이 | 2 | 카드 간 separator |
-| Layout | 메인 영역 | `Main` | 본문 | 1 | Navigation Rail + Side Navigation + 본문 |
-| Layout | 카드 목록 | `List` | 메인 콘텐츠 | 1 | 카드 3개 + divider 2개 |
-| Layout | 박스 컨테이너 | `Box` | 메인 콘텐츠 | 1 | 제목 + 리스트 래핑 |
+| 구분 | UI 요소 | 실제 표기 / data-name | 비고 |
+|---|---|---|---|
+| Screen | 전체 화면 | `1번 화면 - 학습 과목 목록` | 전체 페이지 컨테이너 |
+| Header | 상단 헤더 | `Header` | sticky 헤더 |
+| Header | 햄버거 아이콘 버튼 | `Icon Button` | 아이콘: `bars` |
+| Brand | 로고 | `Elice Logo` | 엘리스 로고 |
+| Selector | 조직 선택 버튼 | `Org` | `LXP`, `Enterprise`, chevron-down 포함 |
+| Input | 검색 필드 | `TextField` | 내부 텍스트 `검색` |
+| Action | 알림 아이콘 버튼 | `Icon Button` | 아이콘: `bell` |
+| Action | 메시지 아이콘 버튼 | `Children` 내부 버튼 | 아이콘: `message-lines` |
+| Avatar | 프로필 원형 영역 | 원형 도형 | 32x32 회색 원 |
+| Navigation | 네비게이션 레일 | `Navigation Rail` | 아이콘 + 라벨 구조 |
+| Navigation Item | 기관 홈 | `ListItem` | 아이콘: `home` |
+| Navigation Item | 탐색 | `ListItem` | 아이콘: `compass` |
+| Navigation Item | 내 클래스 | `ListItem` | 아이콘: `book-open-cover` |
+| Navigation Item | 대시보드 | `ListItem` | 아이콘: `table-columns` |
+| Navigation Item | 더 보기 | `ListItem` | 아이콘: `ellipsis` |
+| Navigation | 사이드 네비게이션 | `Side Navigation` | 클래스 단위 메뉴 |
+| Info | 클래스 정보 영역 | `Info` | 텍스트: `파이썬 입문 클래스` |
+| Side Nav Item | 클래스 홈 | `ListItem` | 아이콘: `chalkboard-user` |
+| Side Nav Item | 학습 과목 | `ListItem` | 아이콘: `list` |
+| Side Nav Item | 수업 일정 | `ListItem` | 아이콘: `calendar` |
+| Side Nav Item | 게시판 | `ListItem` | 아이콘: `chalkboard` |
+| Section Header | 페이지 제목 | `학습 과목 목록 헤더` | 텍스트: `학습 과목 목록` |
+| Card | 과목 카드 | `과목 카드` | 과목 썸네일 + 텍스트 + 액션 |
+| Media | 썸네일 영역 | `Image` | 160x90 placeholder |
+| Text | 과목명 텍스트 | `Text` | `도레미 파이썬 1/2`, `파이썬 기초 문제집` |
+| Text | 메타 정보 텍스트 | `Text` | `파이썬 • 입문 • 8-16시간` |
+| Progress | 진도 바 | `Linear Progress/Determinate` | `25%` 표시 포함 |
+| Progress Segment | 진도 세그먼트 | `01`, `02`, `03`, `04` | `01`만 채워짐 |
+| Button | 이어서 학습하기 버튼 | `Button/Contained` | 텍스트: `이어서 학습하기` |
+| Action | 더보기 아이콘 버튼 | `Icon Button` | 아이콘: `ellipsis-vertical` |
+| Divider | 구분선 | `Divider` | 카드 간 separator |
+| Layout | 메인 영역 | `Main` | Navigation Rail + Side Navigation + 본문 |
+| Layout | 카드 목록 | `List` | 카드 리스트 구조 |
+| Layout | 박스 컨테이너 | `Box` | 제목 + 리스트 래핑 |
 
 ---
 
