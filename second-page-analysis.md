@@ -97,8 +97,6 @@
 | 테스트 항목 | Metadate | Metadate | 시험 텍스트 + 공개 예정 텍스트 |
 
 ## 3. 컴포넌트 구조 시각화 (Mermaid)
-
-```mermaid
 graph TD
     Root["2번 화면 - 학습 과목"]
 
@@ -142,7 +140,7 @@ graph TD
     %% 과목 헤더
     SubjectHeader["과목 헤더<br/>Component"]:::contentStyle
     Inner[Inner]:::contentStyle
-    Left5[Left<br/>과목 목록 버튼<br/>제목 + 설명]:::contentStyle
+    Left5["Left<br/>과목 목록 버튼<br/>제목 + 설명"]:::contentStyle
     ImageThumb[Image<br/>썸네일]:::contentStyle
     Tabs[Tabs]:::contentStyle
     Frame[Frame<br/>4개 탭]:::contentStyle
@@ -166,32 +164,32 @@ graph TD
     AccordionGroup[AccordionGroup]:::accordionStyle
 
     Accordion1["01 강의소개<br/>Component4"]:::accordionStyle
-    Summary1[Summary<br/>0% 진행률]:::accordionStyle
-    Detail1[Detail<br/>펼쳐진 상태]:::accordionStyle
-    List3[List<br/>학습 자료 8개]:::accordionStyle
-    Material1[수업 자료 1<br/>live-link]:::materialStyle
-    Material2[수업 자료 2<br/>live-link]:::materialStyle
-    Material3[수업 자료 3<br/>exercise]:::materialStyle
-    Material4[수업 자료 4<br/>exercise]:::materialStyle
-    Material5[수업 자료 5<br/>live-link]:::materialStyle
-    Material6[수업 자료 6<br/>exercise]:::materialStyle
-    Material7[수업 자료 7<br/>exercise]:::materialStyle
-    Material8[수업 자료 8<br/>exercise]:::materialStyle
+    Summary1["Summary<br/>0% 진행률"]:::accordionStyle
+    Detail1["Detail<br/>펼쳐진 상태"]:::accordionStyle
+    List3["List<br/>학습 자료 8개"]:::accordionStyle
+    Material1["수업 자료 1<br/>live-link"]:::materialStyle
+    Material2["수업 자료 2<br/>live-link"]:::materialStyle
+    Material3["수업 자료 3<br/>exercise"]:::materialStyle
+    Material4["수업 자료 4<br/>exercise"]:::materialStyle
+    Material5["수업 자료 5<br/>live-link"]:::materialStyle
+    Material6["수업 자료 6<br/>exercise"]:::materialStyle
+    Material7["수업 자료 7<br/>exercise"]:::materialStyle
+    Material8["수업 자료 8<br/>exercise"]:::materialStyle
 
     Accordion2["02 print 함수의 활용<br/>Component5"]:::accordionStyle
-    Summary2[Summary<br/>0% 진행률]:::accordionStyle
+    Summary2["Summary<br/>0% 진행률"]:::accordionStyle
 
     Accordion3["03 숫자형<br/>Component14"]:::accordionStyle
-    Summary3[Summary<br/>0% 진행률]:::accordionStyle
+    Summary3["Summary<br/>0% 진행률"]:::accordionStyle
 
     Accordion4["04 불린<br/>Component15"]:::accordionStyle
-    Summary4[Summary<br/>0% 진행률]:::accordionStyle
+    Summary4["Summary<br/>0% 진행률"]:::accordionStyle
 
     Accordion5["05 문자열<br/>Component16"]:::accordionStyle
-    Summary5[Summary<br/>0% 진행률]:::accordionStyle
+    Summary5["Summary<br/>0% 진행률"]:::accordionStyle
 
     Accordion6["06 최종 점검<br/>Component17"]:::accordionStyle
-    Summary6[Summary<br/>공개 예정]:::accordionStyle
+    Summary6["Summary<br/>공개 예정"]:::accordionStyle
 
     %% 구조 연결
     Root --> Header
@@ -295,8 +293,7 @@ graph TD
     classDef infoStyle fill:#D1ECF1,stroke:#17A2B8,stroke-width:2px,color:#000
     classDef accordionStyle fill:#E2E3E5,stroke:#6C757D,stroke-width:2px,color:#000
     classDef materialStyle fill:#F8D7DA,stroke:#DC3545,stroke-width:1px,color:#000
-\`\`\`
-
+    
 ### 색상 범례:
 - 🟣 **Header** (보라색): 최상단 헤더 영역
 - 🟠 **Navigation Rail** (주황색): 좌측 세로 네비게이션
