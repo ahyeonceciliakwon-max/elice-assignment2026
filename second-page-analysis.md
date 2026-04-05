@@ -98,7 +98,7 @@
 
 ## 3. 컴포넌트 구조 시각화 (Mermaid)
 
-\`\`\`mermaid
+```mermaid
 graph TD
     Root["2번 화면 - 학습 과목"]
 
