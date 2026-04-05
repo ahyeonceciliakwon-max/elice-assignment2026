@@ -54,7 +54,7 @@
 
 | 영역 | 컴포넌트 | 실제 data-name | 구성 요소 |
 |------|----------|----------------|-----------|
-| **최상위** | 메인 레이아웃 | 2번 화면 - 학습 과목 | Header + NavigationRail + SideNavigation + Main |
+| **Screen** | 메인 레이아웃 | 2번 화면 - 학습 과목 | Header + NavigationRail + SideNavigation + Main |
 | **Header** | Header | Header | Left + Right |
 | Header | Left | Left | IconButton + Org |
 | Header | Org | Org | EliceLogo + ButtonText |
