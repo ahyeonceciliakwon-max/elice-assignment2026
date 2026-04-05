@@ -106,29 +106,29 @@ graph TD
     IconButton[IconButton<br/>bars]:::headerStyle
     Org[Org]:::headerStyle
     EliceLogo[EliceLogo]:::headerStyle
-    ButtonText[ButtonText<br/>LXP + Enterprise Chip]:::headerStyle
+    ButtonText["ButtonText<br/>LXP + Enterprise Chip"]:::headerStyle
 
     HeaderRight[Right]:::headerStyle
-    TextField[TextField<br/>검색]:::headerStyle
+    TextField["TextField<br/>검색"]:::headerStyle
     Children[Children]:::headerStyle
-    Bell[IconButton<br/>bell]:::headerStyle
-    Message[Container<br/>message-lines]:::headerStyle
+    Bell["IconButton<br/>bell"]:::headerStyle
+    Message["Container<br/>message-lines"]:::headerStyle
     Avatar[Avatar]:::headerStyle
 
     %% Navigation Rail 그룹
     NavRail[NavigationRail]:::navRailStyle
     NavContent[Content]:::navRailStyle
-    NavList1[List<br/>기관 홈]:::navRailStyle
-    NavList2[List<br/>탐색, 내 클래스<br/>대시보드, 더 보기]:::navRailStyle
+    NavList1["List<br/>기관 홈"]:::navRailStyle
+    NavList2["List<br/>탐색, 내 클래스<br/>대시보드, 더 보기"]:::navRailStyle
 
     %% Side Navigation 그룹
     SideNav[SideNavigation]:::sideNavStyle
     SideContent[Content]:::sideNavStyle
-    Info[Info<br/>파이썬 입문 클래스]:::sideNavStyle
+    Info["Info<br/>파이썬 입문 클래스"]:::sideNavStyle
     Stack1[Stack]:::sideNavStyle
     List2[List]:::sideNavStyle
     ListItem5[클래스 홈]:::sideNavStyle
-    ListItem6[학습 과목 ⭐]:::sideNavStyle
+    ListItem6["학습 과목 ⭐"]:::sideNavStyle
     ListItem7[수업 일정]:::sideNavStyle
     ListItem8[게시판]:::sideNavStyle
 
@@ -141,10 +141,10 @@ graph TD
     SubjectHeader["과목 헤더<br/>Component"]:::contentStyle
     Inner[Inner]:::contentStyle
     Left5["Left<br/>과목 목록 버튼<br/>제목 + 설명"]:::contentStyle
-    ImageThumb[Image<br/>썸네일]:::contentStyle
+    ImageThumb["Image<br/>썸네일"]:::contentStyle
     Tabs[Tabs]:::contentStyle
-    Frame[Frame<br/>4개 탭]:::contentStyle
-    Tab1[수업 목록 ⭐]:::contentStyle
+    Frame["Frame<br/>4개 탭"]:::contentStyle
+    Tab1["수업 목록 ⭐"]:::contentStyle
     Tab2[학습 현황]:::contentStyle
     Tab3[학습맵]:::contentStyle
     Tab4[과목 소개]:::contentStyle
@@ -152,12 +152,12 @@ graph TD
     %% 이어서 학습하기
     ContinueLearning["이어서 학습하기<br/>Component1"]:::ctaStyle
     Summary[Summary]:::ctaStyle
-    Left6[Left<br/>실습 정보]:::ctaStyle
-    ButtonContained[ButtonContained<br/>이어서 학습하기]:::ctaStyle
+    Left6["Left<br/>실습 정보"]:::ctaStyle
+    ButtonContained["ButtonContained<br/>이어서 학습하기"]:::ctaStyle
 
     %% 학습 목차 정보
     LessonInfo["학습 목차 정보<br/>Component3"]:::infoStyle
-    InfoText[수업 6개 • 수업자료 80개]:::infoStyle
+    InfoText["수업 6개 • 수업자료 80개"]:::infoStyle
     ButtonText2[모두 펼치기]:::infoStyle
 
     %% Accordion 그룹
@@ -292,8 +292,7 @@ graph TD
     classDef ctaStyle fill:#FFF3CD,stroke:#FFC107,stroke-width:2px,color:#000
     classDef infoStyle fill:#D1ECF1,stroke:#17A2B8,stroke-width:2px,color:#000
     classDef accordionStyle fill:#E2E3E5,stroke:#6C757D,stroke-width:2px,color:#000
-    classDef materialStyle fill:#F8D7DA,stroke:#DC3545,stroke-width:1px,color:#000
-    
+    classDef materialStyle fill:#F8D7DA,stroke:#DC3545,stroke-width:1px,color:#000   
 ### 색상 범례:
 - 🟣 **Header** (보라색): 최상단 헤더 영역
 - 🟠 **Navigation Rail** (주황색): 좌측 세로 네비게이션
