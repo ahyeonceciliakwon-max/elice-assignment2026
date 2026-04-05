@@ -11,7 +11,7 @@
 | Input | 검색 필드 | `TextField` | 내부 텍스트 `검색` |
 | Action | 알림 아이콘 버튼 | `Icon Button` | 아이콘: `bell` |
 | Action | 메시지 아이콘 버튼 | `Children` 내부 버튼 | 아이콘: `message-lines` |
-| Avatar | 프로필 원형 영역 | 원형 도형 | 32x32 회색 원 |
+| Avatar | 프로필 원형 영역 | 원형 도형 | 32x32 회색 원, Ellipse 311 |
 | Navigation | 네비게이션 레일 | `Navigation Rail` | 아이콘 + 라벨 구조 |
 | Navigation Item | 기관 홈 | `ListItem` | 아이콘: `home` |
 | Navigation Item | 탐색 | `ListItem` | 아이콘: `compass` |
