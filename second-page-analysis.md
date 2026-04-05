@@ -1,5 +1,7 @@
 # UI Audit 분석 - 2번 화면 (학습 과목)
 
+---
+
 ## 1. UI 요소 목록
 
 | 구분 | UI 요소 | 요소 이름 | 비고 |
@@ -50,6 +52,8 @@
 | Accordion Items | Accordion | 05 문자열 (String) | 0% 진행률 |
 | Accordion Items | Accordion | 06 최종 점검 | 시험 아이콘, 공개 예정 |
 
+---
+
 ## 2. 컴포넌트 단위 목록
 
 | 영역 | 컴포넌트 | 실제 data-name | 구성 요소 |
@@ -96,100 +100,104 @@
 | **테스트 항목** | Component17 | 학습 목차 테스트 | Summary > Left (Stack + Metadate) + Icon |
 | 테스트 항목 | Metadate | Metadate | 시험 텍스트 + 공개 예정 텍스트 |
 
-## 3. 컴포넌트 구조 시각화 (Mermaid)
+---
+
+## 3. 컴포넌트 구조 시각화
+
+```mermaid
 graph TD
     Root["2번 화면 - 학습 과목"]
 
     %% Header 그룹
-    Header[Header]:::headerStyle
-    HeaderLeft[Left]:::headerStyle
-    IconButton[IconButton<br/>bars]:::headerStyle
-    Org[Org]:::headerStyle
-    EliceLogo[EliceLogo]:::headerStyle
-    ButtonText["ButtonText<br/>LXP + Enterprise Chip"]:::headerStyle
+    Header["Header"]:::headerStyle
+    HeaderLeft["Left"]:::headerStyle
+    IconButton["IconButton bars"]:::headerStyle
+    Org["Org"]:::headerStyle
+    EliceLogo["EliceLogo"]:::headerStyle
+    ButtonText["ButtonText LXP + Enterprise Chip"]:::headerStyle
 
-    HeaderRight[Right]:::headerStyle
-    TextField["TextField<br/>검색"]:::headerStyle
-    Children[Children]:::headerStyle
-    Bell["IconButton<br/>bell"]:::headerStyle
-    Message["Container<br/>message-lines"]:::headerStyle
-    Avatar[Avatar]:::headerStyle
+    HeaderRight["Right"]:::headerStyle
+    TextField["TextField 검색"]:::headerStyle
+    Children["Children"]:::headerStyle
+    Bell["IconButton bell"]:::headerStyle
+    Message["Container message-lines"]:::headerStyle
+    Avatar["Avatar"]:::headerStyle
 
     %% Navigation Rail 그룹
-    NavRail[NavigationRail]:::navRailStyle
-    NavContent[Content]:::navRailStyle
-    NavList1["List<br/>기관 홈"]:::navRailStyle
-    NavList2["List<br/>탐색, 내 클래스<br/>대시보드, 더 보기"]:::navRailStyle
+    NavRail["NavigationRail"]:::navRailStyle
+    NavContent["Content"]:::navRailStyle
+    NavList1["List 기관 홈"]:::navRailStyle
+    NavList2["List 탐색 / 내 클래스 / 대시보드 / 더 보기"]:::navRailStyle
 
     %% Side Navigation 그룹
-    SideNav[SideNavigation]:::sideNavStyle
-    SideContent[Content]:::sideNavStyle
-    Info["Info<br/>파이썬 입문 클래스"]:::sideNavStyle
-    Stack1[Stack]:::sideNavStyle
-    List2[List]:::sideNavStyle
-    ListItem5[클래스 홈]:::sideNavStyle
-    ListItem6["학습 과목 ⭐"]:::sideNavStyle
-    ListItem7[수업 일정]:::sideNavStyle
-    ListItem8[게시판]:::sideNavStyle
+    SideNav["SideNavigation"]:::sideNavStyle
+    SideContent["Content"]:::sideNavStyle
+    Info["Info 파이썬 입문 클래스"]:::sideNavStyle
+    Stack1["Stack"]:::sideNavStyle
+    List2["List"]:::sideNavStyle
+    ListItem5["클래스 홈"]:::sideNavStyle
+    ListItem6["학습 과목 ★ 활성"]:::sideNavStyle
+    ListItem7["수업 일정"]:::sideNavStyle
+    ListItem8["게시판"]:::sideNavStyle
 
     %% Main 영역
-    Main[Main]:::mainStyle
-    Container13[Container]:::mainStyle
-    Box[Box]:::mainStyle
+    Main["Main"]:::mainStyle
+    Container13["Container"]:::mainStyle
+    Box["Box"]:::mainStyle
 
     %% 과목 헤더
-    SubjectHeader["과목 헤더<br/>Component"]:::contentStyle
-    Inner[Inner]:::contentStyle
-    Left5["Left<br/>과목 목록 버튼<br/>제목 + 설명"]:::contentStyle
-    ImageThumb["Image<br/>썸네일"]:::contentStyle
-    Tabs[Tabs]:::contentStyle
-    Frame["Frame<br/>4개 탭"]:::contentStyle
-    Tab1["수업 목록 ⭐"]:::contentStyle
-    Tab2[학습 현황]:::contentStyle
-    Tab3[학습맵]:::contentStyle
-    Tab4[과목 소개]:::contentStyle
+    SubjectHeader["과목 헤더 Component"]:::contentStyle
+    Inner["Inner"]:::contentStyle
+    Left5["Left 과목 목록 버튼 / 제목 / 설명"]:::contentStyle
+    ImageThumb["Image 썸네일"]:::contentStyle
+    Tabs["Tabs"]:::contentStyle
+    Frame["Frame 4개 탭"]:::contentStyle
+    Tab1["수업 목록 ★ 활성"]:::contentStyle
+    Tab2["학습 현황"]:::contentStyle
+    Tab3["학습맵"]:::contentStyle
+    Tab4["과목 소개"]:::contentStyle
 
     %% 이어서 학습하기
-    ContinueLearning["이어서 학습하기<br/>Component1"]:::ctaStyle
-    Summary[Summary]:::ctaStyle
-    Left6["Left<br/>실습 정보"]:::ctaStyle
-    ButtonContained["ButtonContained<br/>이어서 학습하기"]:::ctaStyle
+    ContinueLearning["이어서 학습하기 Component1"]:::ctaStyle
+    Summary["Summary"]:::ctaStyle
+    Left6["Left 실습 정보"]:::ctaStyle
+    ButtonContained["ButtonContained 이어서 학습하기"]:::ctaStyle
 
     %% 학습 목차 정보
-    LessonInfo["학습 목차 정보<br/>Component3"]:::infoStyle
-    InfoText["수업 6개 • 수업자료 80개"]:::infoStyle
-    ButtonText2[모두 펼치기]:::infoStyle
+    LessonInfo["학습 목차 정보 Component3"]:::infoStyle
+    InfoText["수업 6개 / 수업자료 80개"]:::infoStyle
+    ButtonText2["모두 펼치기"]:::infoStyle
 
     %% Accordion 그룹
-    AccordionGroup[AccordionGroup]:::accordionStyle
+    AccordionGroup["AccordionGroup"]:::accordionStyle
 
-    Accordion1["01 강의소개<br/>Component4"]:::accordionStyle
-    Summary1["Summary<br/>0% 진행률"]:::accordionStyle
-    Detail1["Detail<br/>펼쳐진 상태"]:::accordionStyle
-    List3["List<br/>학습 자료 8개"]:::accordionStyle
-    Material1["수업 자료 1<br/>live-link"]:::materialStyle
-    Material2["수업 자료 2<br/>live-link"]:::materialStyle
-    Material3["수업 자료 3<br/>exercise"]:::materialStyle
-    Material4["수업 자료 4<br/>exercise"]:::materialStyle
-    Material5["수업 자료 5<br/>live-link"]:::materialStyle
-    Material6["수업 자료 6<br/>exercise"]:::materialStyle
-    Material7["수업 자료 7<br/>exercise"]:::materialStyle
-    Material8["수업 자료 8<br/>exercise"]:::materialStyle
+    Accordion1["01 강의소개 Component4"]:::accordionStyle
+    Summary1["Summary 0% 진행률"]:::accordionStyle
+    Detail1["Detail 펼쳐진 상태"]:::accordionStyle
+    List3["List 학습 자료 8개"]:::accordionStyle
+    Material1["수업 자료 1 live-link"]:::materialStyle
+    Material2["수업 자료 2 live-link"]:::materialStyle
+    Material3["수업 자료 3 exercise"]:::materialStyle
+    Material4["수업 자료 4 exercise"]:::materialStyle
+    Material5["수업 자료 5 live-link"]:::materialStyle
+    Material6["수업 자료 6 exercise"]:::materialStyle
+    Material7["수업 자료 7 exercise"]:::materialStyle
+    Material8["수업 자료 8 exercise"]:::materialStyle
 
-    Accordion2["02 print 함수의 활용<br/>Component5"]:::accordionStyle
-    Summary2["Summary<br/>0% 진행률"]:::accordionStyle
+    Accordion2["02 print 함수의 활용 Component5"]:::accordionStyle
+    Summary2["Summary 0% 진행률"]:::accordionStyle
 
-    Accordion3["03 숫자형<br/>Component14"]:::accordionStyle
-    Summary3["Summary<br/>0% 진행률"]:::accordionStyle
+    Accordion3["03 숫자형 Component14"]:::accordionStyle
+    Summary3["Summary 0% 진행률"]:::accordionStyle
 
-    Accordion4["04 불린<br/>Component15"]:::accordionStyle
-    Summary4["Summary<br/>0% 진행률"]:::accordionStyle
+    Accordion4["04 불린 Component15"]:::accordionStyle
+    Summary4["Summary 0% 진행률"]:::accordionStyle
 
-    Accordion5["05 문자열<br/>Component16"]:::accordionStyle
-    Summary5["Summary<br/>0% 진행률"]:::accordionStyle
+    Accordion5["05 문자열 Component16"]:::accordionStyle
+    Summary5["Summary 0% 진행률"]:::accordionStyle
 
-    Accordion6["06 최종 점검<br/>Component17"]:::accordionStyle
-    Summary6["Summary<br/>공개 예정"]:::accordionStyle
+    Accordion6["06 최종 점검 Component17"]:::accordionStyle
+    Summary6["Summary 공개 예정"]:::accordionStyle
 
     %% 구조 연결
     Root --> Header
@@ -197,7 +205,6 @@ graph TD
     Root --> SideNav
     Root --> Main
 
-    %% Header 연결
     Header --> HeaderLeft
     Header --> HeaderRight
     HeaderLeft --> IconButton
@@ -210,12 +217,10 @@ graph TD
     Children --> Bell
     Children --> Message
 
-    %% Navigation Rail 연결
     NavRail --> NavContent
     NavContent --> NavList1
     NavContent --> NavList2
 
-    %% Side Navigation 연결
     SideNav --> SideContent
     SideContent --> Info
     SideContent --> Stack1
@@ -225,17 +230,14 @@ graph TD
     List2 --> ListItem7
     List2 --> ListItem8
 
-    %% Main 연결
     Main --> Container13
     Container13 --> Box
 
-    %% Box 연결
     Box --> SubjectHeader
     Box --> ContinueLearning
     Box --> LessonInfo
     Box --> AccordionGroup
 
-    %% 과목 헤더 연결
     SubjectHeader --> Inner
     SubjectHeader --> Tabs
     Inner --> Left5
@@ -246,16 +248,13 @@ graph TD
     Frame --> Tab3
     Frame --> Tab4
 
-    %% 이어서 학습하기 연결
     ContinueLearning --> Summary
     Summary --> Left6
     Summary --> ButtonContained
 
-    %% 학습 목차 정보 연결
     LessonInfo --> InfoText
     LessonInfo --> ButtonText2
 
-    %% Accordion 연결
     AccordionGroup --> Accordion1
     AccordionGroup --> Accordion2
     AccordionGroup --> Accordion3
@@ -263,7 +262,6 @@ graph TD
     AccordionGroup --> Accordion5
     AccordionGroup --> Accordion6
 
-    %% Accordion 1 상세
     Accordion1 --> Summary1
     Accordion1 --> Detail1
     Detail1 --> List3
@@ -276,14 +274,12 @@ graph TD
     List3 --> Material7
     List3 --> Material8
 
-    %% 나머지 Accordion
     Accordion2 --> Summary2
     Accordion3 --> Summary3
     Accordion4 --> Summary4
     Accordion5 --> Summary5
     Accordion6 --> Summary6
 
-    %% 스타일 정의
     classDef headerStyle fill:#E8D5F2,stroke:#6700E6,stroke-width:2px,color:#000
     classDef navRailStyle fill:#FFE5CC,stroke:#FF9933,stroke-width:2px,color:#000
     classDef sideNavStyle fill:#CCE5FF,stroke:#3366FF,stroke-width:2px,color:#000
@@ -292,23 +288,35 @@ graph TD
     classDef ctaStyle fill:#FFF3CD,stroke:#FFC107,stroke-width:2px,color:#000
     classDef infoStyle fill:#D1ECF1,stroke:#17A2B8,stroke-width:2px,color:#000
     classDef accordionStyle fill:#E2E3E5,stroke:#6C757D,stroke-width:2px,color:#000
-    classDef materialStyle fill:#F8D7DA,stroke:#DC3545,stroke-width:1px,color:#000   
-### 색상 범례:
-- 🟣 **Header** (보라색): 최상단 헤더 영역
-- 🟠 **Navigation Rail** (주황색): 좌측 세로 네비게이션
-- 🔵 **Side Navigation** (파란색): 클래스 메뉴 사이드바
-- ⚫ **Main** (회색): 메인 컨테이너
-- 🟢 **과목 헤더** (초록색): 과목 정보 및 탭
-- 🟡 **이어서 학습하기** (노란색): CTA 카드
-- 🔷 **학습 목차 정보** (청록색): 목차 정보 영역
-- ⚪ **Accordion** (회색): 학습 목차 아코디언
-- 🔴 **학습 자료** (빨간색): 개별 학습 자료 아이템
+    classDef materialStyle fill:#F8D7DA,stroke:#DC3545,stroke-width:1px,color:#000
+```
 
-### 주요 특징:
-1. **3단 레이아웃**: Header + (NavigationRail + SideNavigation + Main)
-2. **Header**: 고정 상단 헤더 (64px)
-3. **NavigationRail**: 72px 너비, 아이콘 + 텍스트 세로 네비게이션
-4. **SideNavigation**: 260px 너비, 클래스 내 메뉴
-5. **Main**: 유동 너비, 최대 1024px 콘텐츠 박스
-6. **Accordion**: 6개의 학습 목차, 첫 번째만 펼쳐진 상태
-7. **학습 자료**: live-link, exercise 등 다양한 타입의 자료
+---
+
+## 4. 색상 범례
+
+| 색상 | 영역 |
+|------|------|
+| 🟣 보라색 | **Header** — 최상단 헤더 영역 |
+| 🟠 주황색 | **Navigation Rail** — 좌측 세로 네비게이션 |
+| 🔵 파란색 | **Side Navigation** — 클래스 메뉴 사이드바 |
+| ⚫ 회색 | **Main** — 메인 컨테이너 |
+| 🟢 초록색 | **과목 헤더** — 과목 정보 및 탭 |
+| 🟡 노란색 | **이어서 학습하기** — CTA 카드 |
+| 🔷 청록색 | **학습 목차 정보** — 목차 정보 영역 |
+| ⚪ 연회색 | **Accordion** — 학습 목차 아코디언 |
+| 🔴 빨간색 | **학습 자료** — 개별 학습 자료 아이템 |
+
+---
+
+## 5. 레이아웃 주요 특징
+
+| 항목 | 내용 |
+|------|------|
+| 전체 구조 | 3단 레이아웃: Header + (NavigationRail + SideNavigation + Main) |
+| Header | 고정 상단 헤더, 높이 64px |
+| Navigation Rail | 너비 72px, 아이콘 + 텍스트 세로 네비게이션 |
+| Side Navigation | 너비 260px, 클래스 내 메뉴 |
+| Main | 유동 너비, 최대 콘텐츠 너비 1024px |
+| Accordion | 6개 학습 목차, 첫 번째 항목만 펼쳐진 상태 |
+| 학습 자료 타입 | live-link, exercise 등 다양한 자료 타입 지원 |
